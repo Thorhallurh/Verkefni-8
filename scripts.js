@@ -67,6 +67,7 @@ const text = (() => {
     const value = e.target.previousElementSibling.value;
     if (value.trim() === '') return;
     add(value);
+    e.target.previousElementSibling.value = "";
   }
 
   // fall sem sér um að bæta við nýju item
